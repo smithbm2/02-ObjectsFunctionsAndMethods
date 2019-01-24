@@ -25,13 +25,14 @@ def main():
     #draw_circles(rg.Point(-200, 0))
     #better_draw_circles(rg.Point(100,50),3)
     #better_draw_circles(rg.Point(-200,0),7)
-    #even_better_draw_circles(rg.Point(100, 50), 15, 5, 'blue', 5)
-    #even_better_draw_circles(rg.Point(-200, 0), 9, 10, 'orange', 2)
+    # even_better_draw_circles(rg.Point(100, 50), 15, 5, 'blue', 5)
+    # even_better_draw_circles(rg.Point(-200, 0), 9, 10, 'orange', 2)
 
-    please_help(rg.Point(-200,0),15,5,'red',3)
-    please_help(rg.Point(-200,0),10,8,'black',3)
-    please_help(rg.Point(-200,0),20,4,'orange',3)
-    please_help(rg.Point(-200,0),30,2,'blue',3)
+
+    even_better_draw_circles(rg.Point(-200,0),15,5,'red',3)
+    even_better_draw_circles(rg.Point(-200,0),10,8,'black',3)
+    even_better_draw_circles(rg.Point(-200,0),20,4,'orange',3)
+    even_better_draw_circles(rg.Point(-200,0),30,2,'blue',3)
     window.update()
     window.close_on_mouse_click()
 
@@ -203,21 +204,22 @@ def even_better_draw_circles(point,radius,numcircles,color,thickness):
         turtle.pen_down()
         turtle.draw_circle(radius * k)
 
-def please_help(point,radius,numcircles,color,thickness):
-    turtle = rg.SimpleTurtle()
-    turtle.pen = rg.Pen(color, thickness)
-    turtle.pen_up()
-    turtle.go_to(point)
-    turtle.set_heading(0)
 
-    for k in range(1,numcircles+1):
-        turtle.pen_up()
-        turtle.right(90)
-        turtle.forward(radius)
-        turtle.left(90)
-
-        turtle.pen_down()
-        turtle.draw_circle(radius * k)
+# def please_help(point,radius,numcircles,color,thickness):
+#     turtle = rg.SimpleTurtle()
+#     turtle.pen = rg.Pen(color, thickness)
+#     turtle.pen_up()
+#     turtle.go_to(point)
+#     turtle.set_heading(0)
+#
+#     for k in range(1,numcircles+1):
+#         turtle.pen_up()
+#         turtle.right(90)
+#         turtle.forward(radius)
+#         turtle.left(90)
+#
+#         turtle.pen_down()
+#         turtle.draw_circle(radius * k)
 ###############################################################################
 # DONE: 5.
 #

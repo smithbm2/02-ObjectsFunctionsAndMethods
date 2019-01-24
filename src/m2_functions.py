@@ -21,6 +21,8 @@ import rosegraphics as rg
 
 
 def main():
+    yeah('purple', 10)
+    yeah('blue',15)
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -46,7 +48,6 @@ def hello():
 def yes(a,b):
     print((a**2+b**2)**(.5))
 
-hello()
 
 ###############################################################################
 # DONE: 4a.  Define a function immediately below this _TODO_.
@@ -71,7 +72,7 @@ hello()
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# DONE: 4b.  In main, CALL your function at least TWICE (with different values
+# TODO: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -88,7 +89,7 @@ def yeah(a,b):
     alfred.forward(100)
     george.backward(100)
     window.close_on_mouse_click()
-given()
+
 
 ###############################################################################
 # DONE: 5.
